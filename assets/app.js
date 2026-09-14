@@ -1,4 +1,20 @@
 (function () {
+  const heroLayoutStyle = document.createElement('style');
+  heroLayoutStyle.textContent = `
+    @media (min-width: 981px) {
+      .hero-content {
+        grid-template-areas:
+          "identity profile"
+          "details profile"
+          "actions actions";
+        grid-template-columns: minmax(0, 1.05fr) minmax(22rem, .95fr);
+      }
+      .hero-profile-column { justify-self: end; }
+      .profile-portrait { justify-self: end; }
+    }
+  `;
+  document.head.appendChild(heroLayoutStyle);
+
   const year = document.querySelector('[data-year]');
   if (year) year.textContent = new Date().getFullYear();
 
