@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+<defs><linearGradient id="g" x1="0" x2="1"><stop stop-color="#f7f8fb"/><stop offset="1" stop-color="#edf0ff"/></linearGradient><radialGradient id="h"><stop stop-color="#ff8c42" stop-opacity=".92"/><stop offset=".45" stop-color="#e45b78" stop-opacity=".48"/><stop offset="1" stop-color="#415ccf" stop-opacity="0"/></radialGradient></defs>
+<rect width="800" height="450" fill="url(#g)"/>
+<text x="65" y="62" font-family="Inter,Arial,sans-serif" font-size="28" font-weight="700" fill="#0d1526">Visual anomaly detection</text>
+<g transform="translate(65 105)">
+<rect width="300" height="260" rx="22" fill="#fff" stroke="#dfe3ec" stroke-width="3"/>
+<rect x="30" y="35" width="240" height="170" rx="16" fill="#e7ebf2"/>
+<path d="M55 180 L120 105 L165 145 L205 90 L250 180 Z" fill="#8793a8" opacity=".62"/>
+<circle cx="110" cy="80" r="22" fill="#c2c9d5"/>
+<circle cx="205" cy="128" r="78" fill="url(#h)"/>
+<text x="30" y="235" font-family="SFMono-Regular,Consolas,monospace" font-size="17" fill="#5d687b">image + localization</text>
+</g>
+<path d="M390 235 H455" stroke="#3049bc" stroke-width="4" stroke-linecap="round"/><path d="M443 225 l12 10 -12 10" fill="none" stroke="#3049bc" stroke-width="4"/>
+<g transform="translate(480 125)">
+<rect width="250" height="220" rx="22" fill="#fff" stroke="#dfe3ec" stroke-width="3"/>
+<g fill="#415ccf" opacity=".18"><rect x="25" y="25" width="24" height="24" rx="5"/><rect x="59" y="25" width="24" height="24" rx="5"/><rect x="93" y="25" width="24" height="24" rx="5"/><rect x="127" y="25" width="24" height="24" rx="5"/><rect x="161" y="25" width="24" height="24" rx="5"/><rect x="195" y="25" width="24" height="24" rx="5"/><rect x="25" y="59" width="24" height="24" rx="5"/><rect x="59" y="59" width="24" height="24" rx="5"/><rect x="93" y="59" width="24" height="24" rx="5"/><rect x="127" y="59" width="24" height="24" rx="5"/><rect x="161" y="59" width="24" height="24" rx="5"/><rect x="195" y="59" width="24" height="24" rx="5"/><rect x="25" y="93" width="24" height="24" rx="5"/><rect x="59" y="93" width="24" height="24" rx="5"/><rect x="93" y="93" width="24" height="24" rx="5"/><rect x="127" y="93" width="24" height="24" rx="5"/><rect x="161" y="93" width="24" height="24" rx="5"/><rect x="195" y="93" width="24" height="24" rx="5"/><rect x="25" y="127" width="24" height="24" rx="5"/><rect x="59" y="127" width="24" height="24" rx="5"/><rect x="93" y="127" width="24" height="24" rx="5"/><rect x="127" y="127" width="24" height="24" rx="5"/><rect x="161" y="127" width="24" height="24" rx="5"/><rect x="195" y="127" width="24" height="24" rx="5"/></g>
+<g fill="#3049bc"><rect x="127" y="93" width="24" height="24" rx="5"/><rect x="161" y="127" width="24" height="24" rx="5"/><rect x="127" y="127" width="24" height="24" rx="5"/></g>
+<text x="46" y="195" font-family="SFMono-Regular,Consolas,monospace" font-size="17" fill="#5d687b">CLIP / ViT features</text>
+</g>
+</svg>

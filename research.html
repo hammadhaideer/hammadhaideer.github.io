@@ -1,11 +1,111 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Research — Hammad Ali Haider</title><link rel="stylesheet" href="assets/styles.css"></head><body>
-<nav class="nav"><div class="container nav-inner"><a class="brand" href="index.html">Hammad Ali Haider</a><div class="nav-links"><a href="index.html">Home</a><a class="active" href="research.html">Research</a><a href="publications.html">Publications</a><a href="projects.html">Projects</a><a href="cv.html">CV</a></div></div></nav>
-<main class="container"><section class="page-hero"><div class="eyebrow">Research</div><h1>Efficient and reliable adaptation of foundation models</h1><p>My work is organized around one broad question: how can pretrained models adapt to new tasks and changing conditions while keeping compute, latency, data, and reliability constraints explicit?</p></section>
-<section class="section"><div class="grid-2">
-<article class="card"><div class="kicker">Current direction</div><h3>Efficient LLM adaptation</h3><p>Parameter-efficient fine-tuning, LoRA/QLoRA, low-rank approximation, adapter-based learning, model compression, and efficient attention. I am particularly interested in methods that connect practical efficiency with a clear understanding of optimization behavior.</p></article>
-<article class="card"><div class="kicker">Active research</div><h3>Streaming time-series anomaly detection</h3><p>Causal inference and evaluation for anomaly detection, including delayed attribution, bounded detection latency, sliding-window score alignment, and reproducible evaluation under online constraints.</p></article>
-<article class="card"><div class="kicker">Foundation models for vision</div><h3>Visual anomaly detection</h3><p>CLIP- and ViT-based anomaly detection, test-time adaptation, robustness, and careful image- and pixel-level evaluation across MVTec AD, VisA, and MVTec LOCO.</p></article>
-<article class="card"><div class="kicker">Methodology</div><h3>Reproducible ML research</h3><p>Experiment automation, baseline reproduction, ablation design, model/checkpoint debugging, result aggregation, and evaluation pipelines that make it easier to distinguish method behavior from implementation artifacts.</p></article>
-</div></section>
-<section class="section"><div class="callout"><h2>Research trajectory</h2><p>My current MSc work began with visual anomaly detection, expanded into causal time-series anomaly detection, and is now extending toward efficient foundation-model adaptation and low-rank methods for large language models. I want these areas to remain connected through the common problem of efficient, reliable adaptation.</p></div></section></main>
-<footer class="footer"><div class="container footer-inner"><div>© <span data-year></span> Hammad Ali Haider</div><div class="footer-links"><a href="mailto:hammadhaideerr@stu.xju.edu.cn">Email</a><a href="https://github.com/hammadhaideer">GitHub</a></div></div></footer><script src="assets/app.js"></script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Research of Hammad Ali Haider: efficient foundation-model adaptation, low-rank methods, causal time-series anomaly detection, visual anomaly detection, and reproducible ML." />
+  <title>Research — Hammad Ali Haider</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+<header class="site-header">
+  <div class="shell header-inner">
+    <a class="wordmark" href="index.html">Hammad Ali Haider</a>
+    <nav class="primary-nav" aria-label="Primary navigation">
+      <a href="index.html">Home</a><a class="active" href="research.html">Research</a><a href="publications.html">Publications</a><a href="projects.html">Projects</a><a href="https://medium.com/@hammadhaideerr" target="_blank" rel="noopener">Blog</a><a href="cv/hammad-ali-haider-cv.pdf" target="_blank" rel="noopener">CV</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <section class="page-head shell">
+    <p class="page-label">Research</p>
+    <h1>Efficient and reliable models, from adaptation to streaming inference</h1>
+    <p class="page-lead">My research focuses on making pretrained and foundation models easier to adapt, evaluate, and deploy when compute, data, latency, or robustness constraints matter. My current work spans parameter-efficient adaptation, causal time-series anomaly detection, and foundation-model-based visual anomaly detection.</p>
+    <nav class="on-page" aria-label="On this page">
+      <strong>On this page</strong>
+      <a href="#overview">Overview</a>
+      <a href="#adaptation">Efficient adaptation</a>
+      <a href="#time-series">Time-series AD</a>
+      <a href="#vision">Visual AD</a>
+      <a href="#reproducibility">Reproducible ML</a>
+    </nav>
+  </section>
+
+  <section class="research-overview shell" id="overview">
+    <p class="section-label">Overview</p>
+    <h2>Adaptation and evaluation under real constraints</h2>
+    <p>Large pretrained models are useful because they transfer knowledge across tasks and domains, but practical adaptation still depends on how much state must be trained, how much compute and memory are available, how distribution shift changes behavior, and how predictions are aligned with the evidence available at inference time. I study these questions through efficient adaptation methods and anomaly-detection settings where evaluation details are especially important.</p>
+  </section>
+
+  <section class="research-topic shell" id="adaptation">
+    <div><p class="research-topic-index">01 · Adaptation</p></div>
+    <div class="research-topic-body">
+      <h2>Efficient foundation-model adaptation</h2>
+      <p>My current direction studies parameter-efficient fine-tuning and low-rank adaptation, including LoRA/QLoRA, adapter-based fine-tuning, low-rank approximation, SVD-based model compression, and efficient attention. I am particularly interested in when low-rank structure is sufficient, how rank and update structure should be chosen, and how efficiency can be improved without treating model quality as an afterthought.</p>
+      <p class="research-topic-note">This is an active research direction and technical study area; I do not present it as a completed LLM publication.</p>
+      <div class="research-links">
+        <a class="link-chip" href="cv/hammad-ali-haider-cv.pdf" target="_blank" rel="noopener"><small>CV</small> Current technical study ↗</a>
+        <a class="link-chip" href="projects.html"><small>Projects</small> Efficient LLM adaptation ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="research-topic shell" id="time-series">
+    <div><p class="research-topic-index">02 · Streaming</p></div>
+    <div class="research-topic-body">
+      <h2>Causal time-series anomaly detection</h2>
+      <p>Streaming anomaly detection must distinguish when a score becomes available from the timestamp to which that score is attributed. My work studies causal evaluation, sliding-window inference, bounded attribution delay, and reproducible protocols that avoid hidden look-ahead. The goal is to make online anomaly-detection claims correspond to the information a detector actually had at decision time.</p>
+      <div class="research-links">
+        <a class="link-chip" href="https://github.com/hammadhaideer/BLAST-TSAD" target="_blank" rel="noopener"><small>Project</small> BLAST-TSAD ↗</a>
+        <a class="link-chip" href="publications.html"><small>Manuscript</small> ICASSP 2027 submission ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="research-topic shell" id="vision">
+    <div><p class="research-topic-index">03 · Vision</p></div>
+    <div class="research-topic-body">
+      <h2>Visual anomaly detection</h2>
+      <p>I work with CLIP- and ViT-based anomaly-detection methods, focusing on reliable reproduction, robustness, test-time behavior, and image- and pixel-level evaluation. I have reproduced and benchmarked WinCLIP, AnomalyCLIP, APRIL-GAN, and AF-CLIP across MVTec AD, VisA, and MVTec LOCO to build a stronger experimental foundation for new research.</p>
+      <div class="research-links">
+        <a class="link-chip" href="https://github.com/hammadhaideer/winclip-reproduced" target="_blank" rel="noopener"><small>Code</small> WinCLIP reproduction ↗</a>
+        <a class="link-chip" href="https://github.com/hammadhaideer/anomalyclip-reproduced" target="_blank" rel="noopener"><small>Code</small> AnomalyCLIP reproduction ↗</a>
+        <a class="link-chip" href="projects.html"><small>More</small> All visual AD work ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="research-topic shell" id="reproducibility">
+    <div><p class="research-topic-index">04 · Research practice</p></div>
+    <div class="research-topic-body">
+      <h2>Reproducible machine-learning research</h2>
+      <p>Many apparent model improvements disappear when preprocessing, checkpoint selection, evaluation alignment, or implementation details change. I therefore treat reproducibility as part of the research method: experiment automation, result aggregation, baseline reproduction, ablations, dependency and GPU-environment debugging, and explicit evaluation protocols are central to how I work.</p>
+      <div class="research-links">
+        <a class="link-chip" href="https://github.com/hammadhaideer" target="_blank" rel="noopener"><small>GitHub</small> Public research repositories ↗</a>
+        <a class="link-chip" href="projects.html"><small>Projects</small> Reproductions & systems ↗</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="shell">
+    <div class="footer-inner">
+      <div>
+        <strong>Hammad Ali Haider</strong>
+        <p class="footer-description">AI Engineer and M.S. researcher working on efficient and reliable adaptation of foundation models across language, time series, and vision.</p>
+      </div>
+      <div class="footer-links">
+        <a href="https://orcid.org/0009-0006-5678-9954" target="_blank" rel="me noopener">ORCID</a>
+        <a href="https://github.com/hammadhaideer" target="_blank" rel="me noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/hammad-ali-haider/" target="_blank" rel="me noopener">LinkedIn</a>
+        <a href="https://medium.com/@hammadhaideerr" target="_blank" rel="me noopener">Medium</a>
+        <a href="mailto:hammadhaideerr@stu.xju.edu.cn">Email</a>
+      </div>
+    </div>
+    <p class="footer-copy">© <span data-year></span> Hammad Ali Haider</p>
+  </div>
+</footer>
+<script src="assets/app.js"></script>
+</body>
+</html>

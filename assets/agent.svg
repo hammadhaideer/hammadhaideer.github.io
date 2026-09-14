@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+<rect width="800" height="450" fill="#f4f5fb"/>
+<text x="65" y="62" font-family="Inter,Arial,sans-serif" font-size="28" font-weight="700" fill="#0d1526">AI booking &amp; support agent</text>
+<g stroke="#cbd2e2" stroke-width="3" fill="#fff">
+<rect x="70" y="125" width="160" height="105" rx="18"/><rect x="320" y="95" width="160" height="105" rx="18"/><rect x="570" y="125" width="160" height="105" rx="18"/><rect x="320" y="270" width="160" height="105" rx="18"/>
+</g>
+<g font-family="Inter,Arial,sans-serif" font-size="19" font-weight="650" fill="#162033" text-anchor="middle">
+<text x="150" y="185">Customer</text><text x="400" y="155">AI Agent</text><text x="650" y="185">Calendar</text><text x="400" y="330">Lead capture</text>
+</g>
+<g stroke="#415ccf" stroke-width="4" fill="none" stroke-linecap="round">
+<path d="M230 177 H305"/><path d="M480 155 C525 155 525 177 555 177"/><path d="M400 200 V255"/>
+</g>
+<g fill="#415ccf"><path d="M295 167 l12 10 -12 10"/><path d="M545 167 l12 10 -12 10"/><path d="M390 245 l10 12 10-12"/></g>
+</svg>
